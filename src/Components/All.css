@@ -1,0 +1,97 @@
+
+.myForm{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    text-align: center;
+    border-radius: 10%;
+    height: 40px;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: coral;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+.weatherContainer{
+    margin-top: 15vh;
+    height: 500px;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 6%;
+    background: linear-gradient(rgba(255, 255, 255,0.2), rgba(255, 255, 255, 0));
+    
+}
+.weatherContainer p{
+    padding-left: 20px;
+}
+.weatherList{
+    display: flex;
+    flex-direction: row;
+ 
+}
+.weatherList li{
+    margin-left: 10%;
+    color: white;
+    font-size: 1.6rem;
+    transform: translate(0, 50%);
+    list-style: none;
+    width: auto;
+}
+
+.nameDate{
+   padding-top: 25vh ;
+   padding-left: 5%;
+   color: black;
+  
+}
+.nameDate p{
+    font-size: 5rem;
+    font-weight: 680;
+    margin-top: -1%;
+    color: whitesmoke;
+}
+.date{
+    font-size: 1.5rem;
+    font-weight: 650;
+    text-shadow: grey;
+    color: rgb(37, 81, 226);
+
+}
+.blankPage{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 25px;
+    color: whitesmoke;
+}
+.rotate{
+    background-color: transparent;
+    border: none;
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .weatherContainer{
+        width: 100%;
+    }
+    .weatherList li{
+        font-size: 1.2rem;
+        margin-top: -3%;
+        margin-left: 6%;
+    }
+  }
+  @media (max-width: 600px){
+      
+    .weatherList{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+  }
